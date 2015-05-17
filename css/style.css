@@ -260,23 +260,19 @@ hr {
     text-align: center;
     margin:20px 0px;
 }
-.contacts-email-bg{
-    background: url("../images/email-bg.png") no-repeat left top;
-    min-height: 300px;
-}
-.contacts-email-bg .form-group input{
+.contacts-feedback .form-group input{
     border-radius: 2px;
     border:1px solid #434343;
     font-size: 22px;
     background-color: rgba(255, 255, 255, 0.7);
     filter: alpha(opacity=70);
 }
-.contacts-email-bg .form-group label{
+.contacts-feedback .form-group label{
     font-size:22px;
     font-weight: 100;
 }
-.contacts-email-bg .product-item-order{
-    margin:20px 0px 0px 0px;
+.contacts-feedback .product-item-order{
+    margin:10px 0px 0px 0px;
 }
 .contacts-info{
     font-size:20px;
@@ -287,11 +283,14 @@ hr {
     margin:0px 0px 10px 0px;
 }
 .contacts-info address{
-    margin:0px 0px 0px 0px;
+    margin:20px 0px 0px 0px;
 }
 .contacts-info a{
     font-weight: bold;
     padding:10px 0px 0px 0px;
+}
+.contacts h3{
+	margin:0px 0px 10px 0px;
 }
 footer{
     background: #1d1d1d;
@@ -304,4 +303,26 @@ footer{
 }
 .maps{
     height:250px;
+}
+.modal-header h4{
+    font-size: 24px;
+}
+.modal-body .form-group{
+    padding: 10px 20px;
+    font-size: 22px;
+}
+.modal-body .form-group input{
+    font-size: 20px;
+}
+.modal-footer .btn-order{
+    margin:0px 20px 0px 0px;
+}
+#modal-order-form .form-group label{
+    padding: 0px 10px;
+    margin:0px 0px 0px 10px;
+}
+#modal-order-form .form-group .glyphicon{
+    top:10px;
+    right:20px;
+    display: none;
 }

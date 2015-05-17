@@ -47,12 +47,12 @@
                         </li>
                         <li>
                             <a href="#section-2">
-                                Услуги
+                                Цены
                             </a>
                         </li>
                         <li class="hidden-md">
                             <a href="#section-3">
-                                Цены
+                                Отзывы
                             </a>
                         </li>
                         <li>
@@ -69,7 +69,7 @@
         </div>
     </div>
 </header>
-<section class="title-section">
+<section class="title-section" id="section-1">
     <div class="container">
         <div class="col-md-2"></div>
         <div class="col-md-8 title-section-order">
@@ -113,7 +113,7 @@
         <div class="col-md-2"></div>
     </div>
 </section>
-<section class="products">
+<section class="products" id="section-2">
     <div class="container">
         <h2>В нашей товарной линейке вы найдете оптимальное предложение.</h2>
 
@@ -131,7 +131,7 @@
                 Описание продукции будет описано здесь
                 Описание продукции будет описано здесь
             </p>
-            <button class="product-item-order">
+            <button class="product-item-order" data-toggle="modal" data-target="#myModal">
                 Заказать
                 <span class="glyphicon glyphicon-arrow-right"></span>
             </button>
@@ -151,7 +151,7 @@
                 Описание продукции будет описано здесь
                 Описание продукции будет описано здесь
             </p>
-            <button class="product-item-order">
+            <button class="product-item-order" data-toggle="modal" data-target="#myModal">
                 Заказать
                 <span class="glyphicon glyphicon-arrow-right"></span>
             </button>
@@ -171,7 +171,7 @@
                 Описание продукции будет описано здесь
                 Описание продукции будет описано здесь
             </p>
-            <button class="product-item-order">
+            <button class="product-item-order" data-toggle="modal" data-target="#myModal">
                 Заказать
                 <span class="glyphicon glyphicon-arrow-right"></span>
             </button>
@@ -244,7 +244,7 @@
         <hr>
     </div>
 </section>
-<section class="user-reviews">
+<section class="user-reviews" id="section-3">
     <div class="container">
         <div class="user-reviews-title-bg">
             <h2>
@@ -321,21 +321,22 @@
         </div>
     </div>
 </section>
-<section class="contacts">
+<section class="contacts" id="section-4">
     <div class="container">
         <h2>
             Контакты
         </h2>
-        <div class="col-md-6 contacts-email-bg">
+        <div class="col-md-6 contacts-feedback">
+			<h3>Форма обратной связи</h3>
             <form role="form">
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Имя">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Контактный телефон">
+                    <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Контактный телефон" ng-model="myPhone">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="myEmail">
                 </div>
                 <button class="product-item-order" type="submit">
                     Отправить
@@ -372,8 +373,50 @@
         </div>
     </div>
 </footer>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form role="form" id="modal-order-form" action="javascript:void(null);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Оформление заказа</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="modal-order-form-name" placeholder="Имя">
+                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" name="phone" id="modal-order-form-phone" placeholder="Телефон">
+                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="modal-order-form-email" placeholder="Email">
+                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    </div>
+                    <div class="modal-form-result">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-order">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#nav').onePageNav();
+    });
+</script>
 </body>
 </html>
