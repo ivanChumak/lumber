@@ -1,0 +1,307 @@
+body {
+    color: #000;
+    font-family: "wf_SegoeUILight", "arial";
+    margin:0px 0px -10px 0px;
+}
+
+@font-face {
+    font-family: 'wf_SegoeUILight';
+    src: url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot');
+    src: url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.eot?#iefix') format('embedded-opentype'),
+    url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.woff') format('woff'),
+    url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.ttf') format('truetype'),
+    url('http://i.s-microsoft.com/fonts/Segoe-UI/Cyrillic/Light/latest.svg#web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    font-size: 24px;
+    padding: 0px;
+    background: #1d1d1d;
+    color: #fff;
+}
+
+header .navbar {
+    margin: 0px;
+    min-height: 60px;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+.header-logo {
+    color: #f8a300;
+}
+
+.header-logo, .header-phone {
+    margin: 20px 0px 0px 0px;
+}
+
+.main-menu {
+    text-align: center;
+}
+
+.header-phone {
+    color: #f8a300;
+    text-align: right;
+}
+
+#nav .current a {
+    border-bottom: 5px solid #f8a300;
+    background: #f8a300;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0px -4px;
+}
+
+.nav-menu li a {
+    border-bottom: 5px solid transparent;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 18px;
+}
+
+.nav-menu li a:hover {
+    color: #fff;
+    border-bottom: 5px solid #f8a300;
+}
+
+.title-section {
+    margin: 76px 0px 0px 0px;
+    background: url("../images/title-section-bg.jpg") no-repeat center center;
+    min-height: 550px;
+}
+
+.title-section h1 {
+    margin: 10px 0px 5px 0px;
+}
+
+.title-section h2 {
+    margin: 15px 0px 10px 0px;
+}
+
+.title-section-order {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: 90px 0px 0px 0px;
+    padding: 10px 25px 20px 25px;
+    background-color: rgba(208, 213, 215, 0.7);
+    filter: alpha(opacity=70);
+}
+
+.title-section-order-form {
+    text-align: center;
+}
+
+.title-section-order .has-feedback {
+    text-align: left;
+}
+
+.title-section-order label {
+    font-weight: normal;
+    position: relative;
+    top: -5px;
+}
+
+.title-section-order .form-group .glyphicon {
+    top: 30px;
+    display: none;
+}
+
+.title-section-order-form input {
+    font-size: 18px;
+    color: #000;
+}
+
+.title-section-order-callback {
+    background: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    margin: 20px 0px 10px 0px;
+}
+
+.privacy-policy {
+    font-size: 14px;
+    text-align: left;
+    margin: 10px 0px 0px 0px;
+}
+
+.products h2 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.product-item {
+    padding: 10px 10px 30px 10px;
+    font-size: 16px;
+}
+
+hr {
+    width: 70%;
+    color: #515151;
+    background: #515151;
+    border: 0px none;
+    height: 1px; /* высота 1px IE, Firefox, Opera, Safari */
+    clear: both; /* для очистки, если тег идет после float елемента */
+}
+
+.product-item {
+    padding: 0px 20px 30px 20px;
+}
+
+.product-item-order {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid #c46a00;
+    padding: 10px 15px;
+    background: #f89500;
+    color: #fff;
+    font-size: 18px;
+}
+
+.product-item-order .glyphicon {
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+.product-item h3 {
+    text-align: center;
+}
+
+.product-item-image {
+    text-align: center;
+}
+
+.product-item-description {
+    color: #212121;
+    text-align: justify;
+}
+.our-company{
+    margin:0px 0px 10px 0px;
+}
+.our-company h2 {
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+.our-company-image{
+    text-align: center;
+}
+.our-company h3 {
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+.our-company-item-description{
+    color: #212121;
+    font-size:16px;
+    text-align:justify;
+    padding:10px 0px 15px 0px;
+}
+.user-reviews {
+    background: url("../images/reviewes-bg.jpg") no-repeat center center;
+    min-height: 450px;
+}
+
+.user-reviews h2 {
+    text-align: center;
+}
+
+.user-reviews-title-bg {
+    width:50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    filter: alpha(opacity=70);
+    margin:20px auto;
+    padding:5px 20px 10px 20px;
+}
+.user-reviews-item{
+    margin:20px 10px;
+    padding:10px 15px;
+    background: #fff url("../images/quote.png") no-repeat 10px 10px;
+    height:200px;
+}
+.user-reviews-item-name{
+    color: #f06200;
+    font-size: 22px;
+    font-weight:bold;
+    margin:30px 0px 0px 0px;
+}
+.user-reviews-item-body{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    height:110px;
+}
+.user-reviews-item figure{
+    border: 2px solid #848484;
+    border-radius: 100px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: -55px;
+    text-align: center;
+}
+.user-reviews-image{
+    text-align: center;
+}
+.contacts{
+    background: #e8e8e8;
+    padding:0px 0px 20px 0px;
+}
+.contacts h2{
+    text-align: center;
+    margin:20px 0px;
+}
+.contacts-email-bg{
+    background: url("../images/email-bg.png") no-repeat left top;
+    min-height: 300px;
+}
+.contacts-email-bg .form-group input{
+    border-radius: 2px;
+    border:1px solid #434343;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.7);
+    filter: alpha(opacity=70);
+}
+.contacts-email-bg .form-group label{
+    font-size:22px;
+    font-weight: 100;
+}
+.contacts-email-bg .product-item-order{
+    margin:20px 0px 0px 0px;
+}
+.contacts-info{
+    font-size:20px;
+    text-align: right;
+    padding:0px 0px 0px 40px;
+}
+.contacts-info h3{
+    margin:0px 0px 10px 0px;
+}
+.contacts-info address{
+    margin:0px 0px 0px 0px;
+}
+.contacts-info a{
+    font-weight: bold;
+    padding:10px 0px 0px 0px;
+}
+footer{
+    background: #1d1d1d;
+    color:#fff;
+    padding:20px 0px 15px 0px;
+    margin:0px 0px -15px 0px;
+}
+.footer-dev-info{
+    text-align: right;
+}
+.maps{
+    height:250px;
+}
