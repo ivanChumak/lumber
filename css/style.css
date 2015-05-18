@@ -203,8 +203,9 @@ hr {
 }
 .our-company-item-description{
     color: #212121;
+    font-family: Helvetica Neue, Helvetica, Arial;
     font-size:16px;
-    text-align:justify;
+    text-align:center;
     padding:10px 0px 15px 0px;
 }
 .user-reviews {
@@ -294,7 +295,7 @@ hr {
 }
 footer{
     background: #1d1d1d;
-    color:#fff;
+    color:#f8a300;
     padding:20px 0px 15px 0px;
     margin:0px 0px -15px 0px;
 }
